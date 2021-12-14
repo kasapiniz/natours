@@ -44,11 +44,11 @@ Live demo (Feel free to visit) 👉 : [https://natourssimple.herokuapp.com/](htt
 
 API Features:
 
-Tours List 👉  [https://natourssimple.herokuapp.com/api/v1/tours/tours-within/200/center/34.098453,-118.096327/unit/mi](https://natourssimple.herokuapp.com/api/v1/tours)
+Tours List 👉  [https://natourssimple.herokuapp.com/api/v1/tours](https://natourssimple.herokuapp.com/api/v1/tours)
 
-Tours State 👉  [https://natourssimple.herokuapp.com/api/v1/tours/tours-within/200/center/34.098453,-118.096327/unit/mi](https://natourssimple.herokuapp.com/api/v1/tours/tour-stats)
+Tours State 👉  [https://natourssimple.herokuapp.com/api/v1/tours/tour-stats](https://natourssimple.herokuapp.com/api/v1/tours/tour-stats)
 
-Get Top 5 Cheap Tours 👉  [https://natourssimple.herokuapp.com/api/v1/tours/tours-within/200/center/34.098453,-118.096327/unit/mi](https://natourssimple.herokuapp.com/api/v1/tours/top-5-cheap)
+Get Top 5 Cheap Tours 👉  [https://natourssimple.herokuapp.com/api/v1/tours/top-5-cheap](https://natourssimple.herokuapp.com/api/v1/tours/top-5-cheap)
 
 Get Tours Within Radius 👉 [https://natourssimple.herokuapp.com/api/v1/tours/tours-within/200/center/34.098453,-118.096327/unit/mi](https://natourssimple.herokuapp.com/api/v1/tours/tours-within/200/center/34.098453,-118.096327/unit/mi)
 
