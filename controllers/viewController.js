@@ -87,9 +87,10 @@ exports.getAccount = (req, res) => {
 };
 
 exports.getMyTours = catchAsync(async (req, res, next) => {
-  // 1) find all bookings
+  // 1) Find all bookings
   const bookings = await Booking.find({ user: req.user.id });
-  // 2) find tours with the returned IDs
+
+  // 2) Find tours with the returned IDs
   const tourIDs = bookings.map(el => el.tour);
   const tours = await Tour.find({ _id: { $in: tourIDs } });
 
@@ -98,6 +99,7 @@ exports.getMyTours = catchAsync(async (req, res, next) => {
     tours
   });
 });
+
 
 exports.updateUserData = async (req, res, next) => {
   const updatedUser = await User.findByIdAndUpdate(
