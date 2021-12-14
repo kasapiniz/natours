@@ -48,15 +48,7 @@ exports.signup = catchAsync(async (req, res, next) => {
   new Email(newUser, url).sendWelcome();
   createSendToken(newUser, 201, res);
 
-  // const token = signToken(newUser._id);
 
-  // res.status(201).json({
-  //   status: 'success',
-  //   token,
-  //   data: {
-  //     user: newUser
-  //   }
-  // });
 });
 
 exports.login = catchAsync(async (req, res, next) => {
@@ -75,11 +67,7 @@ exports.login = catchAsync(async (req, res, next) => {
 
   // 3) I f everything ok, send token to client
   createSendToken(user, 200, res);
-  // const token = signToken(user._id);
-  // res.status(200).json({
-  //   status: 'success',
-  //   token
-  // });
+
 });
 
 exports.logout = (req, res) => {
@@ -237,11 +225,7 @@ exports.resetPassword = catchAsync(async (req, res, next) => {
   // 3) Update changedPasswordAt property for the user
   // 4) Log the user in, send JWT to client.
   createSendToken(user, 200, res);
-  // const token = signToken(user._id);
-  // res.status(200).json({
-  //   status: 'success',
-  //   token
-  // });
+
 });
 
 exports.updatePassword = catchAsync(async (req, res, next) => {

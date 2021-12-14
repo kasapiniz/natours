@@ -13,16 +13,7 @@ const router = express.Router();
 // Add it to the post handler stack
 //checkbody middleware!!!
 
-//
-// POST /tour/45sda65/reviews - nested route
 
-// router
-//   .route('/:tourId/reviews')
-//   .post(
-//     authController.protect,
-//     authController.restrictTo('user'),
-//     reviewController.createReview
-//   );
 
 router.use('/:tourId/reviews', reviewRouter);
 
@@ -41,6 +32,7 @@ router
 
 // /tours-distance?distance=233,center=-40i45,unit=mi
 // /tours-distance/233/center/-40,45/unit/mi
+
 router
   .route('/tours-within/:distance/center/:latlng/unit/:unit')
   .get(tourController.getToursWithin);
